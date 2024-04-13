@@ -2,7 +2,7 @@ const express = require("express")
 const router = express.Router()
 const StatController = require("../controllers/stat.controller")
 
-router.get('/countActiveUsers', [
+router.post('/countActiveUsers', [
 	StatController.countActiveUsers
 ]);
 

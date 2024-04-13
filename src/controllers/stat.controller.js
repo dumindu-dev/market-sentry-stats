@@ -3,7 +3,7 @@ const connection = require('../utils/Database');
 exports.countActiveUsers = async (req, res) => {
     const datetime = new Date();
     const dayOfToday = datetime.toISOString().slice(0,10);
-    const userId = req.query.userId;
+    const userId = req.body.userId;
 
     console.log(`[USER LOGIN EVENT] Date:${dayOfToday}, User: ${userId}`);
 
