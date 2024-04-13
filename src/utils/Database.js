@@ -1,5 +1,5 @@
 const config = require('../config');
-const mysql = require('mysql');
+const mysql = require('mysql2');
 
 module.exports = mysql.createPool({
   connectionLimit : 3,
