@@ -1,0 +1,23 @@
+openapi: 3.0.3
+info:
+  title: Stat service
+  version: 1.0.0
+  contact: {}
+servers:
+  - url: http://localhost:4000
+paths:
+  /api/stats/countActiveUsers:
+    get:
+      summary: Count active users
+      description: Count active users
+      operationId: countActiveUsers
+      parameters:
+        - name: userId
+          in: query
+          schema:
+            type: string
+            example: '123'
+      responses:
+        '200':
+          description: ''
+tags: []
