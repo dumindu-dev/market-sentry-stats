@@ -6,4 +6,8 @@ router.post('/countActiveUsers', [
 	StatController.countActiveUsers
 ]);
 
+router.post('/getActiveUserCount', [
+	StatController.getActiveUserCount
+]);
+
 module.exports = router

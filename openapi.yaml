@@ -27,4 +27,12 @@ paths:
       responses:
         '200':
           description: ''
+  /api/stats/getActiveUserCount:
+    post:
+      summary: Get active user count
+      description: Get active user count
+      operationId: getActiveUserCount
+      responses:
+        '200':
+          description: ''
 tags: []
